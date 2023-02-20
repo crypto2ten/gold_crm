@@ -1,0 +1,8 @@
+/node_modules
+/public/build
+/vendor
+.env.example
+.styleci.yml
+.phpunit.xml
+package-lock.json
+composer.lock
