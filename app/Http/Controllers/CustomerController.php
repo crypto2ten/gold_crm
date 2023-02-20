@@ -45,7 +45,7 @@ class CustomerController extends Controller
         return response()->json([
             'success' => true,
             'data' => $customers,
-            'message' => 'Customer created successfully.'
+            'message' => '顧客情報を追加しました。'
         ]);
     }
 
@@ -85,7 +85,7 @@ class CustomerController extends Controller
         return response()->json([
             'success' => true,
             'data' => $customer,
-            'message' => 'Customer updated successfully.'
+            'message' => '顧客情報を更新しました。'
         ]);
     }
 
@@ -100,7 +100,7 @@ class CustomerController extends Controller
 		$customer->delete();
         return response()->json([
             'success' => true,
-            'message' => 'Customer deleted successfully.'
+            'message' => '顧客情報を削除しました。'
         ]);
     }
 }
