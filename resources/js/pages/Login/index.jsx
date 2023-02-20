@@ -65,7 +65,7 @@ const Login = () => {
 
       dispatch(startAction())
       try {
-        let res = await agent.auth.register(signupData.first_name, signupData.last_name, signupData.email, signupData.password, signupData.password_confirmation)
+        let res = await agent.auth.register(signupData.first_name, signupData.email, signupData.password, signupData.password_confirmation)
         dispatch(endAction())
         if (res.data.success) {
           setDisplayState('login')
