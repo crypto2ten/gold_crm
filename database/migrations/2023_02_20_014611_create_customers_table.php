@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('sales')->nullable();
             $table->string('construction_start_date')->nullable();
             $table->string('construction_completion_date')->nullable();
-            $table->string('remarks');
+            $table->string('remarks')->nullable();
             $table->timestamps();
         });
     }
